@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Allyson Huebl</title>
+	
+	<meta name="author" content="Allyson Huebl">
+	<meta name="description" content="CIS 133 Midterm">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	
+</head>
+
+<body>
+
+    <h1>How Am I Doing #1</h1>
+
+    <script>
+    
+    // Pass in array of sales persons
+    // Return name of person with max sales
+    function maxSalesPerson(people) {
+        let maxSales = 0;
+        let maxIndex = 0;
+
+        for (let i = 0; i < people.length; i += 1) {
+            let onePerson = people[i];
+            let sales = onePerson.getSales();
+
+            if (sales > maxSales) {
+                maxSales = sales;
+                maxIndex = i;
+            }
+        }        
+        let name = "";
+
+        if (maxSales > 0) {
+            name = people[maxIndex].getName();
+        }
+        return name;
+    }
+    
+    // Create an array of sales persons (3)
+    // Return it
+    /*
+        {
+            name: a  string
+            sales: a number
+            getName : a function
+            getSales : a function
+        }
+    */
+    function personCreator(name, salesAmt) {
+        let person = {
+            name: personName,
+            sales: salesAmt,
+            getName: function () {
+                return this.name;
+            },
+            getSales: function() {
+                return this.sales;
+            }
+        }; 
+        return person;
+    }
+
+    function createSalesPersons() {
+        let salesPerson1 = {
+            name: "Mary",
+            sales: 100,
+            getName: function () {
+                return this.name;
+            },
+            getSales: function() {
+                return this.sales;
+            }
+        };
+        let salesPerson2 = {
+            name: "Bob",
+            sales: 200,
+            getName: function () {
+                return this.name;
+            },
+            getSales: function() {
+                return this.sales;
+            }
+        };
+        let salesPerson3 = {
+            name: "Ted",
+            sales: 300,
+            getName: function () {
+                return this.name;
+            },
+            getSales: function() {
+                return this.sales;
+            }
+        };
+            
+        return [salesPerson1, salesPerson2, salesPerson3];
+    }
+   
+    //Create Array
+    //Find max sales person
+    //Print the name
+    function main() {
+        let staff = createSalesPersons();
+        let name = maxSalesPerson(staff);
+        alert("Highest sales person is " + name);
+    }
+    
+    main();
+    
+    </script>
+	
+</body>
+</html>

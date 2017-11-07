@@ -105,7 +105,7 @@ var model = {
         for (var i = 0; i < this.shipLength; i += 1) {
             if (direction === 1) {
                 // add location to array for new horizontal ship
-                newShipLocations.push(row + "" + (col + 1));
+                newShipLocations.push(row + "" + (col + i));
             }
             else {
                 // add location to array for new vertical ship
