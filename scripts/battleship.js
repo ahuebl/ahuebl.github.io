@@ -54,7 +54,7 @@ var model = {
 
 				if (this.isSunk(ship)) {
 					view.displayMessage("You sank my battleship!");
-					this.shipsSunk++;
+					this.shipsSunk += 1;
 				}
 				return true;
 			}
@@ -65,7 +65,7 @@ var model = {
 	},
 
     isSunk: function(ship) {
-        for (var i =0; i < this.shipLength; i += 1) {
+        for (var i = 0; i < this.shipLength; i += 1) {
             if (ship.hits[i] !== "hit") {
                 return false;
             }
