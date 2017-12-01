@@ -7,6 +7,7 @@ let tileArray = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D',
 let tileVals = [];
 let tileIds = [];
 let tilesFlipped = 0;
+let numGuesses = 0;
 
 Array.prototype.tileShuffle = function () {
     let i = this.length, j, temp;
@@ -21,7 +22,7 @@ Array.prototype.tileShuffle = function () {
 function newBoard() {
     tilesFlipped = 0;
     let output = '';
-    tileArray.tileShuffle();
+    tileArray.tileShuffle(); // Shuffling the cards
     for(let i =0; i < tileArray.length; i += 1) { // Creating the board tiles
         output += '<div id="tile_'+ i +'" onclick="flipTile(this, \''+ tileArray[i] + '\')"></div>';
     }
@@ -45,6 +46,7 @@ function flipTile(tile, val) {
                 // Check to see if the whole board is cleared
                 if (tilesFlipped == tileArray.length) {
                     alert("Board is cleared. Generateing new board.");
+                    alert("Number of guesses " + numGuesses)
                     document.getElementById('board').innerHTML = "";
                     newBoard();
                 }
@@ -62,6 +64,7 @@ function flipTile(tile, val) {
                     tileIds = [];
                 }
                 setTimeout(flip2Back, 1100);
+                numGuesses = numGuesses += 1;
             }
         }
     }
