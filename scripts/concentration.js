@@ -22,7 +22,7 @@ function newBoard() {
     tilesFlipped = 0;
     let output = '';
     tileArray.tileShuffle();
-    for(let i =0; i < tileArray.length; i += 1) {
+    for(let i =0; i < tileArray.length; i += 1) { // Creating the board tiles
         output += '<div id="tile_'+ i +'" onclick="flipTile(this, \''+ tileArray[i] + '\')"></div>';
     }
     document.getElementById("board").innerHTML = output;
@@ -61,7 +61,7 @@ function flipTile(tile, val) {
                     tileVals = [];
                     tileIds = [];
                 }
-                setTimeout(flip2Back, 1200);
+                setTimeout(flip2Back, 1100);
             }
         }
     }
