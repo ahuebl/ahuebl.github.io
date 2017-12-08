@@ -24,7 +24,7 @@ function getEleText(id) {
 
 // Simple function to test our setup
 function test() {
-    alert("Testing getEleText(): " + getEleText("stuff"));
+    //alert("Testing getEleText(): " + getEleText("stuff"));
 }
 
 function readText () {
@@ -33,7 +33,7 @@ function readText () {
     // Grab the text from the input element
     let theText = inputItem.value;
     // Demonstrate...
-    alert("value is " + theText);
+    //alert("value is " + theText);
     let theTextUpper = theText.toUpperCase();
     // inputItem.value = theTextUpper;
     // Grab the output element from the document
@@ -65,7 +65,7 @@ function cube(inputNumber) {
 function testCube() {
     let numToCube = 3;
     let result = cube(numToCube);
-    alert(result);
+    //alert(result);
 }
 
 
@@ -203,7 +203,7 @@ function readText () {
     // Grab the text from the input element
     let theText = inputItem.value;
     // Demonstrate...
-    alert("value is " + theText);
+    //alert("value is " + theText);
     // Convert the text to uppercase
     let theTextUpper = theText.toUpperCase();
     // Grab the output element from the document
@@ -225,4 +225,4 @@ function textAreaExample3() {
 
  var test = 1;
  doIt(test);
- alert(test);
+ //alert(test);
