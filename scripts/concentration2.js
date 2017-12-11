@@ -3,18 +3,19 @@
  * Allyson Huebl
  */
 
+
 let tileArray = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 
-                 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H',
-                 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L',
-                 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P',
-                 'Q', 'Q', 'R', 'R'];
+                'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H',
+                'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L',
+                'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P',
+                'Q', 'Q', 'R', 'R'];
 let tileVals = [];
 let flippedIDs = [];
 let tilesFaceUp = 0;
 let numberOfGuesses = 0;
 let okToFlip = true;
 const FLIP_BACK_MILSECS = 1100;
-const BG_COLOR = "#A34523";
+const BG_COLOR = "#ADA8BE";
 
 // Add shuffle to the array class
 Array.prototype.tileShuffle = function () {

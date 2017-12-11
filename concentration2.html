@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Concentration Game</title>
+    
+        <meta name="author" content="Allyson Huebl">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+
+        body {
+            background-color: #DC493A;
+        }
+        div#board {
+            background-color: #343330;
+            border: 1px solid #FFF;
+            width: 618px; height: 747px;
+            padding: 14px;
+            padding-top: 4px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        div#board > div {
+            background-image: url(images/tile.jpg);
+            background-position: -42px -44px;
+            border: 2px solid #FFF;
+            border-radius: 8px;
+            width: 49px; height: 75px;
+            float: left;
+            margin: 10px;
+            margin-top: 8px;
+            padding: 15px;
+            font-size: 64px;
+            cursor:pointer;
+            text-align: center;
+        }
+        </style>  
+
+        <script src="scripts/concentration2.js"></script>
+
+    </head>
+    <body>
+        <div id="board"></div>
+        
+        <script>newBoard();</script>
+
+    </body>
+</html>
