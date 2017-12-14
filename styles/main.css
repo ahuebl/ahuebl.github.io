@@ -27,12 +27,15 @@ p {
 
 nav {
     text-align: center;
+    width: 200px; height: 25px;
+    margin: 0 auto;
 }
 
 nav a {
+    display: block;
     color: #4A306D;
     border: 1px solid #0E273C;
-    padding: 8px 15px;
+    padding: 2px 15px;
     text-decoration: none;
     transition: background-color .5s ease-in-out;
     line-height: 3em;

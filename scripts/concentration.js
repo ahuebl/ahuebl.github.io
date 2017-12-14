@@ -14,7 +14,7 @@ let tilesFaceUp = 0;
 let numberOfGuesses = 0;
 let okToFlip = true;
 const FLIP_BACK_MILSECS = 1100;
-const BG_COLOR = "#A34523";
+const BG_COLOR = "#8BB174";
 
 // Add shuffle to the array class
 Array.prototype.tileShuffle = function () {
